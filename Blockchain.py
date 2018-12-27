@@ -3,6 +3,7 @@
 # To be installed:
 # Flask==0.12.2: pip install Flask==0.12.2
 # Postman HTTP Client: https://www.getpostman.com/
+#   HERE IN THIS CODE YOU CAN ADD POSTS AND POST IT ON BLOCKCHAIN AS A BLOCK, THIS BLOCKCINFORMATION CONTAINS OF TIME STAMP, PREVIOUS HASH AND CURRENT HASH
 
 # Importing the libraries
 import datetime
@@ -96,9 +97,9 @@ def get_chain():
 def is_valid():
     is_valid = blockchain.is_chain_valid(blockchain.chain)
     if is_valid:
-        response = {'message': 'hurray All good. The Blockchain is valid.'}
+        response = {'message': 'hurray All good BHARATH NAIK. The Blockchain is valid.'}
     else:
-        response = {'message': 'Pnadey, we have a problem. The Blockchain is not valid.'}
+        response = {'message': 'HEY PANDEY, we have a problem. The Blockchain is not valid.'}
     return jsonify(response), 200
 
 # Running the app
